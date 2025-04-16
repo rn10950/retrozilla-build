@@ -4,6 +4,7 @@ This is a modified edition of [MozillaBuild 1.5](https://ftp.mozilla.org/pub/moz
 
 ## Major changes from MozillaBuild
 * Notepad++ portable edition included and set as default editor (aliased to npp)
+* Various bash environment QOL tweaks
 
 ## Supported OS
 * Windows 2000 SP4
