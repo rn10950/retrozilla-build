@@ -50,17 +50,15 @@ ECHO =========================
 ECHO.
 ECHO 1 ) win32 Console
 ECHO 2 ) MinTTY
-::ECHO 3 ) rxvt
+ECHO 3 ) rxvt
 ECHO.
-SET /P RZ_TERMINAL=[1, 2]: 
+SET /P RZ_TERMINAL=[1, 2, 3]: 
 
 :RUN_SHELL
 
-ECHO TERMINAL: %RZ_TERMINAL%
-
 IF %RZ_TERMINAL%==1 GOTO T1
 IF %RZ_TERMINAL%==2 GOTO T2
-::IF %RZ_TERMINAL%==3 GOTO T3
+IF %RZ_TERMINAL%==3 GOTO T3
 
 ECHO Invalid terminal setting, quitting.
 GOTO EOF
@@ -76,7 +74,7 @@ start "MSYS Shell - MSVC6 Environment" "%MOZILLABUILD%\msys\bin\mintty" -e /bin/
 GOTO EOF
 
 :T3
-REM rxvt - disabled, leaving here for future reference
+REM rxvt
 start "MSYS Shell - MSVC6 Environment" "%MOZILLABUILD%\msys\bin\rxvt" -backspacekey  -sl 2500 -fg %FGCOLOR% -bg %BGCOLOR% -sr -tn msys -geometry 80x25 -e /bin/bash --login -i
 GOTO EOF
 
