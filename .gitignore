@@ -29,3 +29,6 @@ src/msys/home/*
 
 # settings batch files
 src/RZ_BUILD_SETTINGS.BAT
+
+# NSIS output
+output/*

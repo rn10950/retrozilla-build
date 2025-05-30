@@ -16,4 +16,4 @@ This is a modified edition of [MozillaBuild 1.5](https://ftp.mozilla.org/pub/moz
 retrozilla-msvc6.bat must be run from a 32-bit command prompt. To start a 32-bit command prompt, you can paste the following into the run dialog: `C:\WINDOWS\SysWOW64\cmd.exe`
 
 ## Installation
-retrozilla-build is not ready for general use yet, please continue to use whatever version of MozillaBuild you have been using previously. This repository is only posted online at this time to track working changes.
+An installer has been provided under releases that will install retrozilla-tools to C:\retrozilla-tools. If you wish to install manually, make sure the src subdirectory of this repository is in an easy-to-access location without any spaces in the parent directories.
